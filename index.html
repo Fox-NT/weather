@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FoxWeather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9618e92078.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<main>
+    <div class="main__wrapper">
+        <div class="input">
+            <input type="text" placeholder="Введите город" type="text">
+        </div>
+        <div class="app">
+
+            <div class="preloader">
+                <div class="sk-folding-cube">
+                    <div class="sk-cube1 sk-cube"></div>
+                    <div class="sk-cube2 sk-cube"></div>
+                    <div class="sk-cube4 sk-cube"></div>
+                    <div class="sk-cube3 sk-cube"></div>
+                </div>
+            </div>
+            <div class="app__wrapper">
+                <div class="app__header">
+                    <div class="city">Не определён</div>
+                    <div class="time">Обновлено в <span class="time__current"></span></div>
+                </div>
+                <div class="app__main">
+                    <div class="temp">
+                        <div class="temperature"><span></span> °C</div>
+                        <div class="icon"><img src="https://openweathermap.org/img/wn/01d.png" title="" alt=""></div>
+                        <div class="today">
+                            <div class="weather"></div>
+                            <div class="felt">Ощущается как <span class="felt__temp"></span> °C</div>
+                        </div>
+                    </div>
+                    <div class="winds">
+                        <div class="wind">
+                            <i class="fa-solid fa-wind"></i><span class="speed"></span> м/с, <span class="direct">Ю</span> <i class=" degr fa-solid fa-arrow-down-long"></i>
+                        </div>
+                        <div class="water">
+                            <i class="fa-solid fa-droplet"></i> <span></span>%
+                        </div>
+                        <div class="baro">
+                            <i class="fa-solid fa-compass"></i> <span></span> мм. рт. ст.
+                        </div>
+                    </div>
+                </div>
+                <div class="app__footer">
+                    <div class="btn">
+                        <button class="btn__prev prev disable"><i class="fa-solid fa-chevron-left"></i></button>
+                    </div>
+                    <div class="history">
+                        <div class="history__wrapper">
+        <!--                    <div class="history__item item">-->
+        <!--                        <div class="item__date">01.01</div>-->
+        <!--                        <div class="item__time">00:00</div>-->
+        <!--                        <div class="item__icon"><img src="https://openweathermap.org/img/wn/01d.png" title="" alt=""></div>-->
+        <!--                        <div class="item__temp">0</div>-->
+        <!--                    </div>-->
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button class="btn__next next disable"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <script src="script.js"></script>
+
+</body>
+</html>
